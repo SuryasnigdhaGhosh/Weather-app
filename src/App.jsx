@@ -7,7 +7,7 @@ import WeatherDashboard from "./container/WeatherDashboard";
 function App() {
   const root = document.getElementById("root");
   ReactDOM.createRoot(root).render(
-    <BrowserRouter>
+    <BrowserRouter  basename="/Weather-app">
       <Routes>
         <Route path="/" element={<WeatherDashboard/>} />
       </Routes>
