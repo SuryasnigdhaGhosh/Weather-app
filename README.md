@@ -12,7 +12,7 @@ Start the development server: npm run dev
 Open your web browser and visit http://localhost:5173/Weather-app/ to access the WeatherApp.
 
 
-Technologies Used
+
 Weather-App is built using the following technologies:
 
 React.js,
