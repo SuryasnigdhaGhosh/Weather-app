@@ -15,7 +15,7 @@ Open your web browser and visit http://localhost:5173/Weather-app/ to access the
 Technologies Used
 Weather-App is built using the following technologies:
 
-React.js
-Tailwind CSS
-OpenWeatherMap API
+React.js,
+Tailwind CSS,
+OpenWeatherMap API,
 Axios
