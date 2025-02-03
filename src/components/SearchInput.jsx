@@ -13,7 +13,7 @@ export default function SearchInput({ setSearchError }) {
 
     const [searchedString, setSearchString] = useState()
 
-    const {  setWeatherData } = useContext(WeatherContext)
+    const { setWeatherData } = useContext(WeatherContext)
 
     const storedLocation = localStorage.getItem('lsl');
 
@@ -23,17 +23,18 @@ export default function SearchInput({ setSearchError }) {
         getWeather(searchedString);
     };
 
+    //getting initial data from local storage
     useEffect(() => {
-        if (storedLocation  && !searchedString) {
+        if (storedLocation && !searchedString) {
             getWeather(storedLocation)
             setSearchString(storedLocation)
         }
     }, []);
 
-
+    //polling api after 30sec
     useInterval(() => {
         getWeather(searchedString)
-    }, 30000 );
+    }, 30000);
 
     const getWeather = async (location) => {
         try {
